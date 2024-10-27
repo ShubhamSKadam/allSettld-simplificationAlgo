@@ -6,29 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // In-memory data storage
-let users = {
-  user1Phone: {
-    userId: "user1",
-    name: "Alice",
-    phone: "user1Phone",
-    password: "password1",
-    groups: [],
-  },
-  user2Phone: {
-    userId: "user2",
-    name: "Bob",
-    phone: "user2Phone",
-    password: "password2",
-    groups: [],
-  },
-  user3Phone: {
-    userId: "user3",
-    name: "Charlie",
-    phone: "user3Phone",
-    password: "password3",
-    groups: [],
-  },
-};
+let users = {};
 
 let groups = {
   group1: {
